@@ -1,0 +1,81 @@
+@media screen and (max-width:600px) {
+
+.page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.site-navigation {
+    justify-content: space-between;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 99%;
+    min-width: 40%;
+    background-color: #A6BFCF;
+    left: 59.7%;
+    
+} 
+.site-navigation a {
+    display: block;
+    min-width: 100%;
+    color:#FBF6EB
+
+}
+.site-navigation.open {
+    max-height: 100vh;
+    display: block;
+}
+.bathers {
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+
+.logo {
+    
+    letter-spacing: 0.1rem;
+    
+}
+.nav-button {
+    display: block;
+    font-size: 4rem;
+}
+.home-banner {
+    grid-template-columns: 1fr;
+}
+.home-galery {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+#spag {
+    grid-column: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+   padding-left: 8rem;
+}
+.contactus {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 20% 40%;
+    
+    
+}
+
+}
+
+
+@media screen and (max-width:580px) {
+    .contactus{
+        margin: 0 0.5rem 5.9rem 0.5rem;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .contactus{
+        margin: 0 0.5rem 3.5rem 0.5rem;
+    }
+
+}
