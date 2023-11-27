@@ -12,9 +12,9 @@
     display: none;
     position: absolute;
     top: 99%;
-    min-width: 40%;
+    min-width: 100%;
     background-color: #A6BFCF;
-    left: 59.7%;
+    left: 0%;
     
 } 
 .site-navigation a {
@@ -26,6 +26,7 @@
 .site-navigation.open {
     max-height: 100vh;
     display: block;
+    
 }
 .bathers {
     font-size: 3rem;
