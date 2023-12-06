@@ -224,5 +224,27 @@ footer {
     padding: 14px 25px;
     border-radius: 10px;
     font-weight: bold;
-    
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.art{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.art img{
+    border-radius: 20rem;
+    max-width: 16rem;
+}
+
+.text{
+    text-align: justify;
+    padding: 2rem;
 }
