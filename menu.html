@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Bathers Cooge</title>
     <meta charset="UTF-8">
@@ -10,58 +11,108 @@
     <meta name="keywords" content="html,css,javascript">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
+
 <body>
-    <header class="page-header" >
+    <header class="page-header">
         <div class="logo">
-            <h3 class="bathers" >BATHERS COOGEE</h2>
+            <h3 class="bathers">BATHERS COOGEE</h2>
         </div>
         <button class="nav-button">
             <i class="fa-solid fa-bars"></i>
         </button>
         <nav class="site-navigation">
-               <a href="index.html">HOME</a>
-               <a href="menu.html">MENU</a>
-               <a href="booknow.html">BOOK NOW</a>
-               <a href="aboutus.html">ABOUT US</a>
-               <a href="contactus.html">CONTACT US</a>
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="booknow.html">BOOK NOW</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
         </nav>
     </header>
     <main>
-        <div id="main" class="menu">
-            <div class="banner">
-                <div class="button">
-                    <a href="#breakfast-menu"> Breakfast</a>
+        <div class="big-screen">
+            <div id="main" class="menu">
+                <div class="banner">
+                    <div class="button">
+                        <a href="#breakfast-menu"> Breakfast</a>
+                    </div>
+                    <img class="menu-img" src="./images/breakfast.jpg">
                 </div>
-                <img class= "menu-img" src="/images/breakfast.jpg">
-            </div>
-            <div class="banner">
-                <div class="button">
-                    <a href="#lunch-menu">Lunch</a>
+                <div class="banner">
+                    <div class="button">
+                        <a href="#lunch-menu">Lunch</a>
+                    </div>
+                    <img class="menu-img" src="./images/lunch.jpg">
                 </div>
-                <img class= "menu-img" src="/images/lunch.jpg">
+            </div>
+            <div class="breakfast-menu">
+                <h1 id="breakfast-menu"> BREAKFAST MENU</h1>
+                <div class="menu">
+                    <img src="./images/breakfast-menu.jpg">
+                    <img src="./images/breakfast-drinks.jpg">
+                    <a class="main" href="#main">BACK</a>
+                </div>
+            </div>
+            <div class="breakfast-menu">
+                <h1 id="lunch-menu"> LUNCH MENU </h1>
+                <div class="menu">
+                    <img src="./images/lunch-menu.jpg">
+                    <img src="./images/lunch-dring.jpg">
+                    <a class="main" href="#main">BACK</a>
+                </div>
             </div>
         </div>
-        <div class="breakfast-menu">
-            <h1 id="breakfast-menu"> BREAKFAST MENU</h1>
-            <div class="menu">
-                <img src="/images/breakfast-menu.jpg">
-                <img src="/images/breakfast-drinks.jpg">
-                <a class="main" href="#main">BACK</a>
+        <div class="responsive">
+            <div class="banner">
+                <h1> Enjoy our menu</h1>
+            </div>
+            <div id="main" class="menu">
+                <div class="center-carousel">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <div class="slide">
+                            <img class="menu-img" src="./images/breakfast.jpg">
+                        </div>
+                        <div class="slide">
+                            <img class="menu-img" src="./images/lunch.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="breakfast-menu">
+                    <h1 id="breakfast-menu"> BREAKFAST MENU</h1>
+                </div>
+                <div class="center-carousel">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <div class="slide">
+                            <img src="./images/breakfast-menu.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/breakfast-drinks.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="breakfast-menu">
+                    <h1 id="lunch-menu"> LUNCH MENU </h1>
+                </div>
+                <div class="center-carousel">
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <div class="slide">
+                            <img src="./images/lunch-menu.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="./images/lunch-dring.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="breakfast-menu">
-            <h1 id="lunch-menu"> LUNCH MENU </h1>
-            <div class="menu">
-                <img  src="/images/lunch-menu.jpg">
-                <img  src="/images/lunch-dring.jpg">
-                <a class="main" href="#main">BACK</a>
-            </div>
-        </div>
-        
 
 
     </main>
@@ -70,10 +121,12 @@
             <a href="https://www.instagram.com/batherscoogeebeach/">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g261609-d26298827-Reviews-Bathers_Coogee-Coogee_Randwick_Greater_Sydney_New_South_Wales.html">
+            <a
+                href="https://www.tripadvisor.com/Restaurant_Review-g261609-d26298827-Reviews-Bathers_Coogee-Coogee_Randwick_Greater_Sydney_New_South_Wales.html">
                 <i class="fa-solid fa-medal"></i>
             </a>
-            <a href="https://www.google.com/maps/place/Bathers+Coogee/@-33.9231877,151.2546386,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b33469e5aa55:0x70b2344f2d67d49!8m2!3d-33.9231877!4d151.2572135!16s%2Fg%2F11k4vg6m53?entry=ttu">
+            <a
+                href="https://www.google.com/maps/place/Bathers+Coogee/@-33.9231877,151.2546386,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b33469e5aa55:0x70b2344f2d67d49!8m2!3d-33.9231877!4d151.2572135!16s%2Fg%2F11k4vg6m53?entry=ttu">
                 <i class="fa-brands fa-google"></i>
             </a>
         </nav>

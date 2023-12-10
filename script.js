@@ -10,6 +10,13 @@ function onDocumentLoad() {
             nav.classList.add("open")
         }
     })
+    //carousel 
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity(elem, {
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
 }
 
 

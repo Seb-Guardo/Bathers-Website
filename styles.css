@@ -186,13 +186,22 @@ footer {
     
 
 }
-.button a{
+.button{
     background-color: #A6BFCF;
     padding: 14px 25px;
     border-radius: 10px;
     font-weight: bold;
+    transition: all 0.5s;
     
 }
+.button:hover{
+    background-color: white;
+    border-color: #A6BFCF;
+    border: 2px;
+    color: #A6BFCF;
+    transition: all 0.5s;
+}
+
 
 .menu {
     display: grid;
@@ -203,20 +212,25 @@ footer {
 .banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    padding: 5rem;
     
 }
 
 .menu-img {
     max-height: 85%;
+    padding: 2rem;
 }
 
 
 .breakfast-menu {
     text-align: center;
     padding: 2rem;
+}
+
+.responsive {
+    display: none;
 }
 
 .main {
